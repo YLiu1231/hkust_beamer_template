@@ -1,0 +1,101 @@
+\documentclass[10pt,aspectratio=169,mathserif]{beamer}		
+\usepackage{hkust}			 %导入 hkust 模板宏包
+%\usepackage[UTF8]{ctex}         %导入 ctex 宏包，添加中文支持
+%\usepackage{xeCJK}
+\usepackage{amsmath,amsfonts,amssymb,bm}   %导入数学公式所需宏包
+\usepackage{color}			 %字体颜色支持
+\usepackage{graphicx,hyperref,url}	
+
+\beamertemplateballitem		%设置 Beamer 主题
+\catcode`\。=\active                  %或者=13
+\newcommand{。}{．}				
+%将正文中的“。”号转换为“.”。
+
+\title{Title}	%首页信息设置
+
+
+
+\author[LIU Yulin ]{                         %个人信息设置
+    LIU Yulin RPg\\
+  {\small \url{yliufi@connect.ust.hk}\\
+   subtitle}}
+
+  
+
+\date{\today}                                                 %日期信息
+
+\begin{document}
+ 
+\begin{frame}                                                %生成标题页
+\titlepage
+\end{frame}				
+
+\section{Chap 1}						 %生成提纲页
+\begin{frame}
+\frametitle{Chap 1}
+\tableofcontents
+\end{frame}				
+
+\section{Chap 2}
+\begin{frame}
+  \frametitle{Chap 2}
+
+  \begin{itemize}
+    \item {sec 1}
+    
+a
+
+    \item {sec 2}
+    
+b
+
+  \item{sec 3}
+  
+c
+
+  \end{itemize}
+\end{frame}
+
+\section{Chap 3}
+\begin{frame}
+  \frametitle{Chap 3}
+	\begin{block}{sec 1}
+d
+	  \end{block}
+	
+	  \begin{block}{sec 2}
+e
+	  \end{block}
+\end{frame}
+
+\section{Chap 4}
+\begin{frame}
+  \frametitle{Chap 4}
+	 \begin{enumerate}
+	    \item f
+	    \item g
+	    \item h
+
+i
+	  \end{enumerate}
+\end{frame}
+
+\section{Chap 5}
+\begin{frame}
+  \frametitle{Chap 5}
+j\\
+
+k
+\end{frame}
+
+\section{author}
+\begin{frame}
+\frametitle{author}
+\begin{thebibliography}{99} 
+\bibitem{maker} LIU Yulin, 17-Mphil-IELM-HKUST, {\sl yliufi@connect.ust.hk}, template maker\\
+My GitHub: YLiu1231, \url{https://github.com/YLiu1231}
+\bibitem{ps} WANG Jinyang, 17-Mphil-Stat-NJU, {\sl wjyang95@sina.com}, image issue
+\end{thebibliography}
+\end{frame}
+%\char65f8
+\end{document}
