@@ -5,7 +5,8 @@
 \usepackage{amsmath,amsfonts,amssymb,bm}   %导入数学公式所需宏包
 \usepackage{color}			 %字体颜色支持
 \usepackage{graphicx,hyperref,url}	
-
+\usepackage[normalem]{ulem}
+\newcommand\email[1]{\href{mailto:#1}{\uline{\nolinkurl{#1}}}}
 \beamertemplateballitem		%设置 Beamer 主题
 \catcode`\。=\active                  %或者=13
 \newcommand{。}{．}				
@@ -15,10 +16,8 @@
 
 
 
-\author[LIU Yulin ]{                         %个人信息设置
-    LIU Yulin RPg\\
-  {\small \url{yliufi@connect.ust.hk}\\
-   subtitle}}
+\author[LIU Yulin]{  LIU Yulin \\
+\url{yliufi@connect.ust.hk}}                  %个人信息设置}
 
   
 
@@ -43,7 +42,7 @@
   \begin{itemize}
     \item {sec 1}
     
-a
+a 
 
     \item {sec 2}
     
